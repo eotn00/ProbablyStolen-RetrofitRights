@@ -1,0 +1,88 @@
+name: 问题反馈（请上传 Player.log）
+description: 描述你实际遇到的问题，并附上本次发生问题后的日志。
+title: "[问题] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        请先搜索已有反馈。无需先判断是哪个 Mod 的问题，请如实描述。
+        **必须说明实际问题，并上传本次发生问题后的 Player.log。** 截图不能代替日志。
+        日志位置和上传方法见 [README](https://github.com/eotn00/ProbablyStolen-RetrofitRights#获取-playerlogwindows)。Issues 和附件均公开，请先检查隐私。
+  - type: input
+    id: game-version
+    attributes:
+      label: 游戏版本
+      placeholder: 请填写游戏显示的版本；无法确认请明确说明。
+    validations:
+      required: true
+  - type: input
+    id: mod-version
+    attributes:
+      label: 改造权版本
+      placeholder: 请填写实际加载的版本，注明是否为 test 版。
+    validations:
+      required: true
+  - type: dropdown
+    id: install-source
+    attributes:
+      label: 安装来源
+      options:
+        - Steam 创意工坊
+        - GitHub Releases
+        - 本地测试包或其他来源
+        - 同时有多个来源或无法确认
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: 实际遇到的问题
+      description: 你做了什么、发生了什么？请给出容器种类、分页、相关设置等信息，避免只写“有 bug”。
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤与发生频率
+      description: 从哪个存档或场景开始，依次做了什么？如无法稳定复现，请说明当时操作。
+      placeholder: |
+        1. …
+        2. …
+        发生频率：每次 / 偶发 / 仅一次
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 预期表现
+      description: 你原本期望发生什么？
+    validations:
+      required: true
+  - type: textarea
+    id: other-mods
+    attributes:
+      label: 其他已启用的 Mod 与相关配置
+      description: 列出名称与版本；没有请写“无”。请注明新档/旧档，以及是否在更新后出现。
+    validations:
+      required: true
+  - type: textarea
+    id: player-log
+    attributes:
+      label: 上传 Player.log（必需）
+      description: 复现后立即备份日志，拖入此框上传；可压缩为 ZIP 或复制改为 .txt。请保留完整上下文，不要只给日志截图。如确实无法获取，必须说明原因和已检查的路径。
+      placeholder: 将本次 Player.log 文件拖入此处，等待上传完成后再提交。
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: 截图、录像及其他补充（可选）
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: 提交前确认
+      options:
+        - label: 我已说明实际遇到的问题，并上传对应 Player.log；如无法提供，已明确说明原因。
+          required: true
+        - label: 我理解反馈和附件公开可见，已检查隐私信息。
+          required: true
