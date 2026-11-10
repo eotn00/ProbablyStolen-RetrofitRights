@@ -1,11 +1,13 @@
 # 改造权 / Retrofit Rights
 
+**简体中文** | [English](README.en.md)
+
 《深空当铺 / Probably Stolen》的容器材料扩容与仓储显示调整 Mod，可独立使用，无需拾荒拓展作为前置。
 
 本仓库用于**正式版下载和问题反馈**，不提供源码。
 
 - **[下载最新正式版](https://github.com/eotn00/ProbablyStolen-RetrofitRights/releases/latest)**：在 Assets 中下载 `RetrofitRights-版本号.zip`，不要下载 GitHub 自动生成的 Source code 压缩包。
-- **[反馈问题](https://github.com/eotn00/ProbablyStolen-RetrofitRights/issues/new/choose)**：请说明实际遇到的问题，并上传复现后的 `Player.log`。
+- **[中文问题反馈](https://github.com/eotn00/ProbablyStolen-RetrofitRights/issues/new?template=bug-report.yml)** / [Report a bug in English](https://github.com/eotn00/ProbablyStolen-RetrofitRights/issues/new?template=bug-report.en.yml)：请说明实际遇到的问题，并上传复现后的 `Player.log`。
 - [Steam 创意工坊](https://steamcommunity.com/sharedfiles/filedetails/?id=3833929097)
 - [搭配使用：拾荒拓展](https://github.com/eotn00/ProbablyStolen-ScavengerSkills)
 

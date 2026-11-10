@@ -1,0 +1,88 @@
+name: English bug report (attach Player.log)
+description: Describe the problem you encountered and attach the log from the affected session.
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please search existing Issues first. You do not need to know which mod caused the problem.
+        **Describe what actually happened and attach the Player.log from the affected game session.** Screenshots do not replace logs.
+        See the [English README](https://github.com/eotn00/ProbablyStolen-RetrofitRights/blob/main/README.en.md#finding-playerlog-windows) for the log location and upload instructions. Issues and attachments are public; check for personal information before uploading.
+  - type: input
+    id: game-version
+    attributes:
+      label: Game version
+      placeholder: Enter the version shown by the game, or explain if you cannot find it.
+    validations:
+      required: true
+  - type: input
+    id: mod-version
+    attributes:
+      label: Retrofit Rights version
+      placeholder: Enter the version actually loaded; indicate whether it is a test build.
+    validations:
+      required: true
+  - type: dropdown
+    id: install-source
+    attributes:
+      label: Installation source
+      options:
+        - Steam Workshop
+        - GitHub Releases
+        - Local test build or another source
+        - Multiple sources installed or unsure
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What actually happened?
+      description: Describe what you did and the specific problem you observed. For container issues, include the container type, page, and relevant settings.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce and frequency
+      description: State the starting save or location and your actions in order. If you cannot reproduce it reliably, describe what you were doing when it occurred.
+      placeholder: |
+        1. ...
+        2. ...
+        Frequency: every time / sometimes / only once
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What did you expect to happen instead?
+    validations:
+      required: true
+  - type: textarea
+    id: other-mods
+    attributes:
+      label: Other enabled mods and relevant settings
+      description: List names and versions, or write None. State whether this is a new or existing save and whether the problem started after an update.
+    validations:
+      required: true
+  - type: textarea
+    id: player-log
+    attributes:
+      label: Attach Player.log (required)
+      description: Back up the log immediately after reproducing the problem, then drag it here. You can upload a ZIP or rename a copy to .txt. Keep the full context; do not upload only a log screenshot. If you genuinely cannot obtain it, explain why and which location you checked.
+      placeholder: Drag the Player.log from the affected session here and wait for the upload to finish before submitting.
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots, videos, or additional details (optional)
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Before submitting
+      options:
+        - label: I described the actual problem and attached the relevant Player.log, or explained why I cannot provide it.
+          required: true
+        - label: I understand that this report and its attachments are public and have checked for personal information.
+          required: true
